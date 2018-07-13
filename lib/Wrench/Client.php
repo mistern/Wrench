@@ -205,7 +205,7 @@ class Client extends Configurable
         $data = $this->socket->receive();
 
         if (!$data) {
-            return $data;
+            return [];
         }
 
         $old = $this->received;
